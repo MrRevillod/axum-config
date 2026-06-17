@@ -58,7 +58,13 @@ impl Config {
         let item = self.inner.get(key).cloned()?;
         let value = Value::into_deserializer(item);
 
-        T::deserialize(value).ok()
+        match T::deserialize(value) {
+            Ok(v) => Some(v),
+            Err(e) => {
+                tracing::error!(config_key = %key, error = %e, "Failed to deserialize config section");
+                None
+            }
+        }
     }
 
     #[cfg(feature = "validation")]
