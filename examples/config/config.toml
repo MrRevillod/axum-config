@@ -13,4 +13,5 @@ non_defined_env_var = "${NON_DEFINED_VAR:default_value}"
 database_url = "${DB_URL}/my_database"
 
 [with-file]
-cargo_toml = "file:Cargo.toml"
+cargo_toml = "file:examples/Cargo.toml"
+hi = "file:examples/folder/file.txt"

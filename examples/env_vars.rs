@@ -12,8 +12,8 @@ struct EnvConfig {
 
 fn main() {
     let config = Config::builder()
-        .add_dotenv()
-        .add_file("config.toml")
+        .add_dotenv_file("examples/.env")
+        .add_file("examples/config/config.toml")
         .build()
         .expect("Failed to load config file");
 

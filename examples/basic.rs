@@ -16,9 +16,9 @@ struct WithFileConfig {
 
 fn main() {
     let config = Config::builder()
-        .add_dotenv()
+        .add_dotenv_file("examples/.env")
         .add_file("nonexistent.toml")
-        .add_required_file("config.toml")
+        .add_required_file("examples/config/config.toml")
         .add_toml_str("[extra]\nversion = \"1.0\"")
         .build()
         .expect("Failed to load config file");
