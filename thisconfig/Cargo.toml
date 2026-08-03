@@ -14,7 +14,7 @@ categories = ["config", "web-programming"]
 default = ["macros"]
 time-unit = ["dep:duration-str"]
 byte-unit = ["dep:byte-unit"]
-axum = ["thisconfig-macros/axum"]
+axum = ["thisconfig-macros/axum", "dep:axum"]
 validation = ["validator/derive"]
 dotenv = ["dep:dotenv"]
 macros = ["dep:thisconfig-macros"]
@@ -30,6 +30,7 @@ thiserror = "2.0.17"
 toml = "0.9.10"
 validator = { version = "0.20.0", features = ["derive"], optional = true }
 
+axum = { version = "0.8.8", optional = true }
 byte-unit = { version = "5.2.0", optional = true }
 duration-str = { version = "0.20.0", optional = true }
 dotenv = { version = "0.15.0", optional = true }

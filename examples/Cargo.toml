@@ -26,7 +26,6 @@ path = "units.rs"
 [dependencies]
 axum = "0.8.8"
 serde = { workspace = true, features = ["derive"] }
-thisconfig = { workspace = true, features = ["validation", "dotenv"] }
-axum-config = { workspace = true, features = ["byte-unit", "time-unit"] }
+thisconfig = { workspace = true, features = ["validation", "dotenv", "axum", "time-unit", "byte-unit"] }
 validator = { version = "0.20.0", features = ["derive"] }
 tokio = { version = "1.0", features = ["full"] }

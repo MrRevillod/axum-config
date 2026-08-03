@@ -80,17 +80,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "axum-config"
-version = "0.2.2"
-dependencies = [
- "axum",
- "serde",
- "thisconfig",
- "tracing",
- "validator",
-]
-
-[[package]]
 name = "axum-core"
 version = "0.5.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -319,7 +308,6 @@ name = "examples"
 version = "0.1.0"
 dependencies = [
  "axum",
- "axum-config",
  "serde",
  "thisconfig",
  "tokio",
@@ -1304,6 +1292,7 @@ dependencies = [
 name = "thisconfig"
 version = "0.2.2"
 dependencies = [
+ "axum",
  "byte-unit",
  "dotenv",
  "duration-str",

@@ -1,6 +1,6 @@
 use axum::{Extension, Router, response::IntoResponse, routing::get};
-use axum_config::{Config, ExtractConfig, config};
 use serde::Deserialize;
+use thisconfig::{Config, ExtractConfig, config};
 use tokio::net::TcpListener;
 
 #[config(key = "server")]

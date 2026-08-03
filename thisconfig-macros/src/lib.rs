@@ -38,18 +38,6 @@ fn config_impl(args: TokenStream, input: &DeriveInput) -> syn::Result<TokenStrea
         ));
     };
 
-    #[cfg(feature = "axum")]
-    let expanded = quote! {
-        #input
-
-        impl ::axum_config::ConfigItem for #name {
-            fn key() -> &'static str {
-                #lit_str
-            }
-        }
-    };
-
-    #[cfg(not(feature = "axum"))]
     let expanded = quote! {
         #input
 

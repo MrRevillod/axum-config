@@ -1,4 +1,4 @@
-use crate::{interpolation::Interpolator, Config, ConfigError, ConfigSourceInfo};
+use crate::{Config, ConfigError, ConfigSourceInfo, interpolation::Interpolator};
 use std::{fs, path::PathBuf, sync::Arc};
 use toml::Table;
 use tracing::{error, warn};

@@ -1,6 +1,6 @@
-use axum_config::{ByteConfig, TimeConfig, config};
 use serde::Deserialize;
 use thisconfig::Config;
+use thisconfig::{ByteConfig, TimeConfig, config};
 
 #[config(key = "app")]
 #[derive(Clone, Deserialize)]

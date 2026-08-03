@@ -1,6 +1,6 @@
-use axum_config::config;
 use serde::Deserialize;
 use thisconfig::Config;
+use thisconfig::config;
 
 #[config(key = "env")]
 #[derive(Clone, Deserialize, Default)]

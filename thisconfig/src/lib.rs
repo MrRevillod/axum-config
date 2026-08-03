@@ -4,6 +4,15 @@ mod error;
 mod interpolation;
 mod utils;
 
+#[cfg(feature = "axum")]
+mod integrations {
+    #[cfg(feature = "axum")]
+    pub mod axum;
+}
+
+#[cfg(feature = "axum")]
+pub use integrations::axum::*;
+
 use serde::de::DeserializeOwned;
 
 pub use builder::ConfigBuilder;

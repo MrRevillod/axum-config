@@ -1,7 +1,6 @@
 [workspace]
 resolver = "2"
 members = [
-    "axum-config",
     "thisconfig",
     "thisconfig-macros",
     "examples",
@@ -10,7 +9,6 @@ members = [
 [workspace.dependencies]
 thisconfig = { path = "thisconfig", version = "0.2.2" }
 thisconfig-macros = { path = "thisconfig-macros", version = "0.2.2" }
-axum-config = { path = "axum-config", version = "0.2.2" }
 
 tracing = { version = "0.1.44" }
 serde = { version = "1.0.228", features = ["derive"] }
