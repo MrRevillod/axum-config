@@ -1290,7 +1290,7 @@ dependencies = [
 
 [[package]]
 name = "thisconfig"
-version = "0.2.2"
+version = "0.3.0"
 dependencies = [
  "axum",
  "byte-unit",
@@ -1309,7 +1309,7 @@ dependencies = [
 
 [[package]]
 name = "thisconfig-macros"
-version = "0.2.2"
+version = "0.3.0"
 dependencies = [
  "quote",
  "syn 2.0.116",

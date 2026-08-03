@@ -7,8 +7,8 @@ members = [
 ]
 
 [workspace.dependencies]
-thisconfig = { path = "thisconfig", version = "0.2.2" }
-thisconfig-macros = { path = "thisconfig-macros", version = "0.2.2" }
+thisconfig = { path = "thisconfig", version = "0.3.0" }
+thisconfig-macros = { path = "thisconfig-macros", version = "0.3.0" }
 
 tracing = { version = "0.1.44" }
 serde = { version = "1.0.228", features = ["derive"] }

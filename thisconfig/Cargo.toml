@@ -1,6 +1,6 @@
 [package]
 name = "thisconfig"
-version = "0.2.2"
+version = "0.3.0"
 edition = "2024"
 authors = ["Luciano Revillod <lrevillod2022@alu.uct.cl>"]
 license = "MIT"
