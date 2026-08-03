@@ -8,6 +8,7 @@ Configuration management for Rust applications. Load configuration from TOML fil
 - Multi file support with merging and overriding
 - Environment variable interpolation (`${VAR}` and `${VAR:default}`)
 - File loading directly on config files (`key = "file:path"`)
+- Axum integration via feature flag
 
 ## Installation
 
